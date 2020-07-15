@@ -1,0 +1,31 @@
+/* navbar starts */
+.top-nav-collapse {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  background-color: #694db3 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #694db3 !important;
+  }
+}
+
+.nav-link.active{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #694db3!important;
+  }
+  .navbar-collapse {
+    margin-top: 5px;
+  }
+}

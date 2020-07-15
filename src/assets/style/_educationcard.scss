@@ -1,0 +1,25 @@
+.education-tab {
+  margin: 0 0.1rem;
+  background-color: #e9ecef;
+  .card-body {
+    overflow: hidden;
+  }
+  .education-tab-body {
+    background: #fff;
+    box-shadow: 0 1px 5px 0 rgba(28,36,58,.1),
+    0 2px 2px 0 rgba(28,36,58,.07),
+    0 3px 1px -2px rgba(28,36,58,.06) !important;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .institute-name {
+    font-weight: bold;
+    font-size: 1.05rem;
+  } 
+}
+@media only screen and (max-width: 992px) {
+  .education-tab {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,51 @@
+// As hex codes */
+
+$color-primary-0: #5A1BFF;	// Main Primary color */
+$color-primary-1: #C4ADFF;
+$color-primary-2: #A37FFF;
+$color-primary-3: #290095;
+$color-primary-4: #200072;
+
+$color-secondary-1-0: #B60BFF;	// Main Secondary color (1) */
+$color-secondary-1-1: #E5A8FF;
+$color-secondary-1-2: #D676FF;
+$color-secondary-1-3: #650090;
+$color-secondary-1-4: #4D006F;
+
+$color-secondary-2-0: #1C55FF;	// Main Secondary color (2) */
+$color-secondary-2-1: #AEC2FF;
+$color-secondary-2-2: #80A0FF;
+$color-secondary-2-3: #002592;
+$color-secondary-2-4: #001C71;
+
+
+
+// As RGBa codes */
+
+$rgba-primary-0: rgba( 90, 27,255,1);	// Main Primary color */
+$rgba-primary-1: rgba(196,173,255,1);
+$rgba-primary-2: rgba(163,127,255,1);
+$rgba-primary-3: rgba( 41,  0,149,1);
+$rgba-primary-4: rgba( 32,  0,114,1);
+
+$rgba-secondary-1-0: rgba(182, 11,255,1);	// Main Secondary color (1) */
+$rgba-secondary-1-1: rgba(229,168,255,1);
+$rgba-secondary-1-2: rgba(214,118,255,1);
+$rgba-secondary-1-3: rgba(101,  0,144,1);
+$rgba-secondary-1-4: rgba( 77,  0,111,1);
+
+$rgba-secondary-2-0: rgba( 28, 85,255,1);	// Main Secondary color (2) */
+$rgba-secondary-2-1: rgba(174,194,255,1);
+$rgba-secondary-2-2: rgba(128,160,255,1);
+$rgba-secondary-2-3: rgba(  0, 37,146,1);
+$rgba-secondary-2-4: rgba(  0, 28,113,1);
+
+$white: #fff;
+$grey: #636363;
+.white-text {
+  color: $white;
+}
+
+.secondary-text {
+  color: $grey;
+}
