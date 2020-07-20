@@ -13,16 +13,9 @@ body {
   height: 100vh;
 }
 
-.view {
-  height: 100vh;
-}
-
 @media (max-width: 740px) {
   html,
   body {
-    height: 100vh;
-  }
-  .view {
     height: 100vh;
   }
 }
@@ -215,6 +208,14 @@ ol {
   line-height: 45px;
 }
 
+section:nth-of-type(even) {
+  background: #edf2fa;
+}
+
+.view.profile {
+  height: 100vh;
+}
+
 /* navbar starts */
 .top-nav-collapse {
   padding-top: 15px !important;
@@ -234,8 +235,9 @@ ol {
   }
 }
 
-.nav-link.active {
+.active-spy {
   background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
 }
 
 @media (max-width: 991px) {
@@ -267,7 +269,7 @@ ol {
 }
 
 .education-tab .institute-name {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.05rem;
 }
 
@@ -277,8 +279,45 @@ ol {
   }
 }
 
-section:nth-of-type(even) {
-  background: #edf2fa;
+.project-card {
+  margin: 0 0.1rem;
+}
+
+.project-card .card-body {
+  padding: 0rem;
+}
+
+.project-card .card-body .project-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.project-card .card-body span.badge-pill {
+  font-weight: normal;
+  padding: 5px 10px;
+  background-color: #694db3;
+}
+
+.project-card .card-body .footer {
+  background-color: #694db3;
+}
+
+.project-card .card-body .footer .link-button {
+  width: 49.9%;
+  display: inline-block;
+  color: #fff;
+}
+
+.project-card .card-body .footer .link-button:hover {
+  background-color: #41316b;
+  border-bottom-right-radius: .25rem !important;
+  border-bottom-left-radius: .25rem !important;
+}
+
+.project-card .card-body .footer .vertical-rule {
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 2rem;
 }
 
 .footer-section {

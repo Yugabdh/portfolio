@@ -8,8 +8,6 @@
 @import "./default";
 @import "./navbar";
 @import "./educationcard";
-section:nth-of-type(even) {
-  background: #edf2fa;
-}
+@import "./projectcard";
 @import "./footer";
 @import "./buttons";

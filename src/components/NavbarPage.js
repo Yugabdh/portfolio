@@ -43,27 +43,28 @@ export default class NavbarPage extends React.Component {
                   <MDBNavItem>
                     <Link
                       className="nav-link Ripple-parent"
-                      activeClass="active"
+                      activeClass="active-spy"
                       to="profile"
                       spy={true}
                       smooth={true}
-                      offset={-70}
+                      offset={-100}
                       duration= {500}
+                      onClick={this.closeCollapse('mainNavbarCollapse')}
                     >
                       Profile
                     </Link>
                   </MDBNavItem>
 
-
                   <MDBNavItem>
                     <Link
                       className="nav-link Ripple-parent"
-                      activeClass="active"
+                      activeClass="active-spy"
                       to="about"
                       spy={true}
                       smooth={true}
-                      offset={-70}
+                      offset={-100}
                       duration= {500}
+                      onClick={this.closeCollapse('mainNavbarCollapse')}
                     >
                       About
                     </Link>
@@ -73,14 +74,47 @@ export default class NavbarPage extends React.Component {
                   <MDBNavItem>
                     <Link
                       className="nav-link Ripple-parent"
-                      activeClass="active"
+                      activeClass="active-spy"
                       to="education"
                       spy={true}
                       smooth={true}
-                      offset={-70}
+                      offset={-100}
                       duration= {500}
+                      onClick={this.closeCollapse('mainNavbarCollapse')}
                     >
                       Education
+                    </Link>
+                  </MDBNavItem>
+
+
+                  <MDBNavItem>
+                    <Link
+                      className="nav-link Ripple-parent"
+                      activeClass="active-spy"
+                      to="projects"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration= {500}
+                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                    >
+                      Project
+                    </Link>
+                  </MDBNavItem>
+
+
+                  <MDBNavItem>
+                    <Link
+                      className="nav-link Ripple-parent"
+                      activeClass="active-spy"
+                      to="certification"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration= {500}
+                      onClick={this.closeCollapse('mainNavbarCollapse')}
+                    >
+                      Certification
                     </Link>
                   </MDBNavItem>
 
@@ -90,47 +124,7 @@ export default class NavbarPage extends React.Component {
                       to="/about"
                       onClick={this.closeCollapse('mainNavbarCollapse')}
                     >
-                      Skills
-                    </MDBNavLink>
-                  </MDBNavItem>
-
-
-                  <MDBNavItem>
-                    <MDBNavLink 
-                      to="/about"
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
-                    >
-                      Achivments
-                    </MDBNavLink>
-                  </MDBNavItem>
-
-
-                  <MDBNavItem>
-                    <MDBNavLink 
-                      to="/about"
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
-                    >
-                      Certification
-                    </MDBNavLink>
-                  </MDBNavItem>
-
-
-                  <MDBNavItem>
-                    <MDBNavLink 
-                      to="/about"
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
-                    >
                       Publication
-                    </MDBNavLink>
-                  </MDBNavItem>
-
-
-                  <MDBNavItem>
-                    <MDBNavLink 
-                      to="/about"
-                      onClick={this.closeCollapse('mainNavbarCollapse')}
-                    >
-                      Goals
                     </MDBNavLink>
                   </MDBNavItem>
 

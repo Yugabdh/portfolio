@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function EducationCards({education}) {
   if(education != null) {
@@ -43,6 +43,10 @@ export default function EducationCards({education}) {
           </div>
         </div>
       </section>
+    )
+  } else {
+    return (
+      <span id="education"></span>
     )
   }
   
