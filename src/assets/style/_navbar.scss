@@ -2,29 +2,39 @@
 .top-nav-collapse {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
-  background-color: #694db3 !important;
+  background-color: #fff !important;
 }
-
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .nav-link {
+    border-bottom: 3px solid transparent;
+  }
+  .active-spy {
+    background-color: rgba(37, 206, 209, 0.2);
+    border-bottom: 3px solid rgb(37, 206, 209);
+    padding: 0.5rem;
+  }
+}
 .navbar:not(.top-nav-collapse) {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: transparent !important;
+  background: #fff !important;
 }
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #694db3 !important;
+    background: #fff !important;
   }
 }
 
-.active-spy {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem;
-}
-
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #694db3!important;
+    background: #fff!important;
   }
   .navbar-collapse {
     margin-top: 5px;

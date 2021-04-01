@@ -8,7 +8,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <HeaderBanner userName={this.props.user.userName} onLiner={this.props.user.oneLiner} />
+        <HeaderBanner userName={this.props.user.userName} onLiner={this.props.user.oneLiner} profilePic={this.props.user.profilePic} />
         <AboutUser/>
         <EducationCards education={this.props.user.education} />
         <ProjectSection projects={this.props.user.projects} /> 

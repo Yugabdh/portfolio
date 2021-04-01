@@ -30,7 +30,7 @@ export default function EducationCards({education}) {
         <div className="container spad-2">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 text-center">
-              <div className="section-title">
+              <div className="section-title blue-text-main">
                 <h2>Education</h2>
                 <div className="border-meghna"></div>
               </div>

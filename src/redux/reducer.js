@@ -7,6 +7,7 @@ export const initialState = {
     Incididunt magna ut aliqua voluptate est et voluptate velit dolor veniam esse. 
     Sunt commodo sint et cillum. Incididunt eu sunt nostrud pariatur deserunt ut. 
     Non voluptate non ipsum Lorem eu do exercitation cillum occaecat.`,
+  profilePic: "https://drive.google.com/uc?export=view&id=1cTyPG1xZP9aPqwgdmt4B9jPsL0AE-Grh",
   education: [
     {
       type: "Graduation",
@@ -34,7 +35,7 @@ export const initialState = {
   projects: [
     {
       name: "Codelit : Learn to code in C (Web application)",
-      img: "https://drive.google.com/uc?export=view&id=1xgfxqqpjbf_-lICKRpioHDOSj1jnc40w",
+      img: "https://drive.google.com/uc?export=view&id=1oFF8W-iS9An6WJ0qQd3VZIC8Qjzjvz32",
       source: "#!",
       live: "#!",
       description: `Excepteur ullamco aliqua non exercitation quis. 

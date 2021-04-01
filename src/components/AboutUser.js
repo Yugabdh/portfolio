@@ -43,7 +43,7 @@ export default function AboutUser() {
             </ul>
           </div> 
           <div className="col-sm-12 col-md-8 text-center">
-            <div className="section-title">
+            <div className="section-title blue-text-main">
               <h2>About me</h2>
             </div>
             <div className="border-meghna"></div>

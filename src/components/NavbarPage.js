@@ -29,9 +29,9 @@ export default class NavbarPage extends React.Component {
 
   render() {
     return (
-      <MDBNavbar dark expand='md' fixed='top' scrolling>
+      <MDBNavbar light expand='md' fixed='top' scrolling>
         <div className="container">
-            <img src={require("../assets/img/svg/logo.svg")} height="40" 
+            <img src={require("../assets/img/svg/logo-test.svg")} height="40" 
               className="d-inline-block align-top m-1" alt="logo" />
             <MDBNavbarBrand href='/'>
               <strong>Portfolio</strong>

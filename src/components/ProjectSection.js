@@ -39,17 +39,23 @@ export default function ProjectSection({projects}) {
 
                 </div>
               </div>
-              <div className='rounded-bottom footer lighten-3'>
-                <a className="link-button p-3 text-center" 
-                  href={ project.live } target="_blank" rel="noopener noreferrer">
-                    <MDBIcon icon="check-circle" /> Live
-                </a>
-                <div className="align-middle vertical-rule"></div>
-                <a className="link-button p-3 text-center"
-                  href={ project.source } target="_blank" rel="noopener noreferrer">
-                    <MDBIcon icon='clone left' /> Source Code
-                </a>
+              <div className='row no-gutters rounded-bottom footer lighten-3'>
+                  <div className="col-sm-6 col-md-6 col-lg-6 text-center link-button">
+                    <a className="stretched-link" 
+                      href={ project.live } target="_blank" rel="noopener noreferrer">
+                        <MDBIcon icon="check-circle" /> Live
+                    </a>
+                  </div>
+                  <div className="col-sm-6 col-md-6 col-lg-6 text-center link-button">
+                    <a className="stretched-link"
+                      href={ project.source } target="_blank" rel="noopener noreferrer">
+                        <MDBIcon icon='clone left' /> Source Code
+                    </a>
+                  </div>
               </div>
+                
+                {/* <div className="align-middle vertical-rule"></div> */}
+                
               </div>
             </div>
           </div>
@@ -61,7 +67,7 @@ export default function ProjectSection({projects}) {
         <div className="container spad-2">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 text-center">
-              <div className="section-title">
+              <div className="section-title blue-text-main">
                 <h2>Projects</h2>
                 <div className="border-meghna"></div>
               </div>
