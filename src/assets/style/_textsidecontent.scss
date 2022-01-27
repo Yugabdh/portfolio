@@ -1,0 +1,67 @@
+@use "./colors" as colors;
+@use "./typography" as typography;
+
+.left-right-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "leftbox rightbox";
+
+    margin-left: 24px;
+
+    .left-side-content {
+        grid-area: leftbox;
+        color: #fff;
+        font-size: 1.1rem;
+        padding-right: 24px;
+
+        &::before {
+            content: "<p>";
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: 1rem;
+            color: colors.$secondary;
+            display: block;
+        }
+
+        &::after {
+            content: "</p>";
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: 1rem;
+            color: colors.$secondary;
+            display: block;
+        }
+    }
+
+    .right-side-content {
+        grid-area: rightbox;
+        padding-right: 48px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .left-right-wrapper {
+        margin-left: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "leftbox";
+    
+        .left-side-content {
+            font-size: 1.2rem;
+            padding-right: 0;
+
+            &::before {
+                font-size: 0.8rem;
+            }
+    
+            &::after {
+                font-size: 0.8rem;
+            }
+        }
+
+        .right-side-content {
+            display: none;
+            padding-right: 0;
+        }
+    }
+}

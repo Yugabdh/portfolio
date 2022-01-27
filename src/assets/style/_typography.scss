@@ -1,0 +1,60 @@
+@use "./colors" as colors;
+// Adds two fonts: Montserrat, Nunito Sans
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Cedarville Cursive', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito+Sans:ital,wght@0,200;0,400;0,700;0,800;0,900;1,200;1,400;1,700&display=swap');
+
+$regular-font: 'Nunito Sans', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+
+html, body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.default-font {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.secondary-font {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+.primary-heading {
+	color: colors.$heading-attention-0;
+}

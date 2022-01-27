@@ -1,0 +1,81 @@
+@use "./colors" as colors;
+@use "./typography" as typography;
+
+.project-card-wrapper {
+    padding: 24px;
+    .project-card {
+        background-color: colors.$bg-color-2;
+        margin-bottom: 48px;
+        padding: 24px;
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "heading heading"
+        "projectinfo projectimg";
+
+        .project-card-name {
+            grid-area: heading;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h3 {
+                color: #fff;
+                font-family: typography.$heading-font;
+            }
+            hr {
+                width: 200px;
+                margin-left: 0;
+                color: colors.$heading-attention-1;
+            }
+        }
+
+        .project-card-info {
+            grid-area: projectinfo;
+            p {
+                color: #fff;
+                font-size: 1.1rem;
+            }
+        }
+
+        .project-card-image {
+            grid-area: projectimg;
+            img {
+
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .project-card-wrapper {
+        padding: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        
+        .project-card {
+            display: grid;
+            grid-template-rows: 1fr 50px auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: "projectimg"
+            "heading"
+            "projectinfo";
+            
+            .project-card-name {
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    color: #fff;
+                    font-family: typography.$heading-font;
+                }
+                hr {
+                    width: 40%;
+                    margin-left: 50%;
+                    margin-right: 50%;
+                    color: colors.$heading-attention-1;
+                }
+            }
+        }
+        
+    }
+}
