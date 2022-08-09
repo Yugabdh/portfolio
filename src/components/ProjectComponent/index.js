@@ -19,7 +19,7 @@ const ProjectComponent = (props) => {
                             })
                         }
                     </div>
-                    <div className="d-flex project-buttons">
+                    <div className="project-buttons">
                         {project.code? <a href={project.code} target="_blank" rel="noreferrer" className="primary-button project-link-button"><BsGithub /> Code</a>:<></>}
                         {project.link? <a href={project.link} target="_blank" rel="noreferrer" className="primary-button project-link-button"><MdLink /> Visit</a>:<></>}
                     </div>

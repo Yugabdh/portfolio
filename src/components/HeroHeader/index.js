@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../../assets/img/svg/intext.svg';
 import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
 import { Link as LinkS } from 'react-scroll';
-import { animateScroll as scroll } from 'react-scroll';
 
 const HeroHeader = () => {
     return (
