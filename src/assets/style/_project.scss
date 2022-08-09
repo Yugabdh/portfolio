@@ -25,7 +25,8 @@
             hr {
                 width: 200px;
                 margin-left: 0;
-                color: colors.$heading-attention-1;
+                border: 0; 
+                border-top: 1px solid colors.$heading-attention-1;
             }
         }
 
@@ -54,7 +55,7 @@
                 .primary-button.project-link-button {
                     cursor: pointer;
                     color: #fff;
-                    padding: 0.55rem 2rem;
+                    padding: 0.55rem 1rem;
                     border: 1px solid #fff;
                     background: url(../img/svg/parllelogram-1.svg);
                 }
@@ -108,14 +109,12 @@
                 justify-content: center;
                 align-items: center;
                 h3 {
-                    color: #fff;
-                    font-family: typography.$heading-font;
+                    font-size: 24px;
                 }
                 hr {
                     width: 40%;
                     margin-left: 50%;
                     margin-right: 50%;
-                    color: colors.$heading-attention-1;
                 }
             }
             .project-card-image {

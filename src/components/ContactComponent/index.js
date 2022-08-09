@@ -27,29 +27,33 @@ const ContactComponent = () => {
                 </div>
             </div>
             <div className="contact-right" data-aos="fade-in" data-aos-easing="ease-in" data-aos-anchor-placement="top-bottom">
-                <form className="contact-form">
+                <form className="contact-form" action="https://formsubmit.co/yugabdhppashte@gmail.com" method="POST">
                     <div className="contact-form-wrapper">
                         <div className="form-item contact-grid-2">
                             <div className="contact-grid-item name">
                                 <input 
                                 type="text" 
-                                name="your-name"
+                                name="name"
                                 size="40" 
                                 className="input-text" 
                                 aria-required="true" 
                                 aria-invalid="false" 
-                                placeholder="Name" />
+                                placeholder="Name"
+                                required="true"
+                                />
                                 <span className="focus-border"></span>
                             </div>
                             <div className="contact-grid-item email">
                                 <input 
                                 type="email" 
-                                name="your-email" 
+                                name="email" 
                                 size="40" 
                                 className="input-text" 
                                 aria-required="true" 
                                 aria-invalid="false" 
-                                placeholder="Email" />
+                                placeholder="Email"
+                                required="true"
+                                />
                                 <span className="focus-border"></span>
                             </div>
                         </div>
@@ -57,12 +61,13 @@ const ContactComponent = () => {
                             <div className="contact-grid-item">
                                 <input 
                                 type="text" 
-                                name="your-subject" 
+                                name="_subject" 
                                 size="40" 
                                 className="input-text" 
                                 aria-required="true" 
                                 aria-invalid="false" 
-                                placeholder="Subject (Optional)" />
+                                placeholder="Subject (Optional)"
+                                />
                                 <span className="focus-border"></span>
                             </div>
                         </div>
@@ -70,12 +75,14 @@ const ContactComponent = () => {
                         <div className="form-item contact-grid-1">
                             <div className="contact-grid-item">
                                 <textarea 
-                                name="your-message" 
+                                name="message" 
                                 cols="40" rows="6" 
                                 className="input-textarea" 
                                 aria-invalid="false" 
                                 placeholder="Message" 
-                                style={{height: 262+'px'}} />
+                                style={{height: 262+'px'}} 
+                                required="true" 
+                                />
                                 <span className="focus-border"></span>
                             </div>
                         </div>
