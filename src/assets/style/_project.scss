@@ -6,7 +6,7 @@
     .project-card {
         background-color: colors.$bg-color-2;
         margin-bottom: 48px;
-        padding: 24px;
+        padding: 2.5rem;
         display: grid;
         grid-template-rows: 50px 1fr;
         grid-template-columns: 1fr 1fr;
@@ -35,12 +35,54 @@
                 color: #fff;
                 font-size: 1.1rem;
             }
+            .skill-pill {
+                display: inline-block;
+                background-color: colors.$heading-attention-0;
+                color: colors.$bg-color-0;
+                margin: 5px;
+                padding: 5px 10px;
+                border-radius: 10rem;
+                display: inline-block;
+                font-size: 0.8rem;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                -o-border-radius: 10rem;
+            }
+            .project-buttons {
+                margin-top: 2rem;
+                .primary-button.project-link-button {
+                    cursor: pointer;
+                    color: #fff;
+                    padding: 0.55rem 2rem;
+                    border: 1px solid #fff;
+                    background: url(../img/svg/parllelogram-1.svg);
+                }
+                
+                .primary-button.project-link-button:hover{
+                    background-position: 50%;
+                    color: colors.$bg-color-0;
+                    border: 1px solid #fff;
+                }
+                
+                .primary-button.project-link-button:after {
+                    content: "";
+                    position: absolute;
+                    background: #fff;
+                }
+                
+                .project-link-button {
+                    &:not(:first-child) {
+                        margin-left: 12px;
+                    }
+                }
+            }
         }
 
         .project-card-image {
             grid-area: projectimg;
             img {
-
+                padding-left: 2rem;
             }
         }
     }
@@ -73,6 +115,11 @@
                     margin-left: 50%;
                     margin-right: 50%;
                     color: colors.$heading-attention-1;
+                }
+            }
+            .project-card-image {
+                img {
+                    padding: 1rem;
                 }
             }
         }

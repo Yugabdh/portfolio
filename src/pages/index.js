@@ -202,33 +202,68 @@ const Home = () => {
     var about_sideContent = <TextSideContent leftSide={ about_leftSide } rightSide={ about_rightSide } />;
     const projectData = [
         {
-            id: 0,
-            projectName: "Codelit",
-            projectImage: "/assets/img/projectImages/codelit-mockup.png",
-            projectImageName: "Codelit-image",
-            projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            skills: true,
+            id: 4,
+            projectName: "Ragul Family Dental",
+            projectImage: "/assets/img/projectImages/ragul-family-dental-mockup.png",
+            projectImageName: "Ragul Family Dental mock",
+            projectDetails: "Ragul Family Dental is one of the freelance opportunities that was given to me by one of my colleagues. The requirements were simple: I needed to create a webapp for a dental clinic that would serve as a booking system. To start with, I generated a low-fidelity UI in Figma to understand the app flow and get the client's go ahead with the design I created. I used Firebase for an easy and trustable login system and data storage to speed up development.",
+            skills: ["React.js", "Firebase", "Figma", "Bootstrap", "Sass"]
+        },
+        {
+            id: 3,
+            projectName: "Magic Resume",
+            projectImage: "/assets/img/projectImages/magic-resume-mockup.png",
+            projectImageName: "Magic Resume Mock",
+            projectDetails: "Magic Resume is yet another freelance opportunity I got from my friend's connection. The clients were college students with quite a tight deadline of just one week. I had no restrictions on design, so rather than starting from scratch, I quickly generated a UI with the help of a previously created component for other projects. Again, I used Firebase for database and authentication and used React.js. I finished and submitted the project on time with a single-page application.",
+            skills: ["React.js", "Firebase", "Bootstrap", "Sass"],
+            link: "https://magic-resume.web.app/"
+        },
+        {
+            id: 2,
+            projectName: "Technogeekx",
+            projectImage: "/assets/img/projectImages/technogeekx-mockup.png",
+            projectImageName: "Technogeekx mockup",
+            projectDetails: "Technogeekx is one of my personal projects I created when I was learning React.js. I didn't create any particular design for this one, which was a bad choice, but well... I wanted to convert it to my personal blog but later learned that it would be better if I used CMS instead, or any other blogging website rather than creating my own.",
+            skills: ["React.js", "Firebase", "Bootstrap", "Sass"],
+            link: "https://technogeekx-web.web.app/",
+            code: "https://github.com/Yugabdh/technogeekx-website"
         },
         {
             id: 1,
-            projectName: "Test",
+            projectName: "Raven",
+            projectImage: "/assets/img/projectImages/raven-logo.png",
+            projectImageName: "Raven logo",
+            projectDetails: "Raven is a web reconnaissance tool that can perform passive as well as a few active scans. I started with this project as the CLI tool in my second year and converted it to a web-based app using Flask. As I understood that the output is quite hard to digest for someone who is using it for the first time. This project was inspired by the Nessus scanner.",
+            skills: ["Python 3", "Flask", "Javascript", "Web Scrapping", "Figma"],
+            code: "https://github.com/Yugabdh/raven"
+        },
+        {
+            id: 0,
+            projectName: "Codelit",
             projectImage: "/assets/img/projectImages/codelit-mockup.png",
-            projectImageName: "Test",
-            projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            skills: true,
+            projectImageName: "Codelit Mock",
+            projectDetails: "Codelit was one of my first webapps I created in my first year. I built it using PHP, Javascript, and MySQL. I was just exploring back then. After all, who uses PHP, right? It was a learning website where users could learn C, even though I didn't understand C enough to teach someone in the first place :p. This app had profile management, quizzes, and lessons as modules.",
+            skills: ["PHP", "Javascript", "MySQL"]
         }
     ];
     
     const experinceData = [
         {
-            id: 0,
-            position: "Software Engineer",
-            companyName: "Newgen Software",
-            companyDuration: "June 2021-January 2022",
-            companyWork: "Newgen is the leading provider of a unified digital transformation platform with native process automation, content services, and communication management capabilities. Here I worked on Jersey Java framework to create APIs to provide touchpoints to end systems, also integrated APIs to provide additional functionality to user.",
+            id: 2,
+            position: "Application Development Associate",
+            companyName: "Accenture",
+            companyDuration: "March 2022-Current",
+            companyWork: "Accenture is multinational professional services company that specialises in information technology (IT) services and consulting. A Fortune Global 500 company, it reported revenues of $50.53 billion in 2021….Accenture. Currently I'm exploring my journey at Accenture.",
         },
         {
             id: 1,
+            position: "Software Engineer",
+            companyName: "Newgen Software",
+            companyDuration: "June 2021-January 2022",
+            companyWork: "Newgen is the leading provider of a unified digital transformation platform with native process automation, content services, and communication management capabilities. Here I worked using Java EE to create RESTful Webservices to provide touchpoints to end systems, also integrated APIs to provide additional functionality to user.",
+        },
+        {
+            id: 0,
             position: "Front-end Devloper Intern",
             companyName: "Dezignolics",
             companyDuration: "June, 2020",

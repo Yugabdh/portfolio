@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../assets/img/svg/intext.svg';
 import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
+import { Link as LinkS } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 
 const HeroHeader = () => {
     return (
@@ -21,9 +23,16 @@ const HeroHeader = () => {
                     </div>
                     <div className="hero-button-wrapper">
                         <div className="button-borders">
-                            <button className="primary-button">
-                                Contact me!
-                            </button>
+                            <LinkS 
+                                to="contact" 
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                className="primary-button"
+                                offset={-80}>
+                                    Contact Me
+                            </LinkS>
                         </div>
                     </div>
                     <div className="hero-social-wrapper">
