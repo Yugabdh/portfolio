@@ -1,0 +1,57 @@
+@use "../base" as base;
+
+.btn {
+  padding: 10px 22px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+
+.btn-primary {
+  border: 2px solid base.$heading-attention-0;
+  color: base.$heading-attention-0;
+}
+
+.primary-button {
+  cursor: pointer;
+  color: base.$heading-attention-0;
+  font-size: 1rem;
+  font-family: base.$regular-font;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  padding: 0.55rem 3rem;
+  border: 1px solid base.$heading-attention-0;
+  background: url(./parllelogram.svg);
+  background-size: 140%;
+  background-position: 500%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, color, border;
+  position: relative;
+
+  &:hover {
+    background-position: 50%;
+    color: base.$bg-color-0;
+    border: 1px solid base.$heading-attention-0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: base.$heading-attention-0;
+    width: 0.2rem;
+    height: 0.2rem;
+    bottom: -1px;
+    right: -1px;
+    transition: 0.3s background-color ease-in-out;
+    -webkit-transition: 0.3s background-color ease-in-out;
+    -moz-transition: 0.3s background-color ease-in-out;
+    -ms-transition: 0.3s background-color ease-in-out;
+    -o-transition: 0.3s background-color ease-in-out;
+  }
+}
+
+.primary-button:hover:after {
+  background: base.$bg-color-0;
+}

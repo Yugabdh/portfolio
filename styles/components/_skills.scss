@@ -1,0 +1,166 @@
+@use "../base" as base;
+
+.skill-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "leftbox rightbox"
+    "bottombox bottombox";
+  color: #fff;
+  font-size: 1.1rem;
+  margin-left: 24px;
+
+  .left-wrapper {
+    grid-area: leftbox;
+    &::before {
+      content: "<p>";
+      font-family: base.$cursive;
+      font-size: 1rem;
+      color: base.$secondary;
+      display: block;
+    }
+
+    &::after {
+      content: "</p>";
+      font-family: base.$cursive;
+      font-size: 1rem;
+      color: base.$secondary;
+      display: block;
+    }
+  }
+
+  .right-wrapper {
+    grid-area: rightbox;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .bottom-wrapper {
+    grid-area: bottombox;
+
+    .experince-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .experince-item {
+        flex: 1;
+        padding: 12px;
+        .experince-item-wrapper {
+          padding: 12px;
+          height: 100%;
+          background-color: base.$bg-color-2;
+          border-left: 2px solid base.$heading-attention-0;
+        }
+
+        .experince-company-name {
+          font-size: 1rem;
+          margin-bottom: 0;
+        }
+
+        .experince-company-duration {
+          font-size: 0.7rem;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .text-on-border-wrapper .file-marker {
+    border: 1px solid base.$heading-attention-1;
+  }
+
+  .file-marker > div {
+    padding: 0 12px;
+    height: 100px;
+    margin-top: -0.7em;
+  }
+  .box-title {
+    background: base.$bg-color-1 none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0 2px;
+    margin-left: 1em;
+    color: base.$heading-attention-0;
+  }
+
+  .box-contents {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+
+  .skill-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .skill-logo {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .skill-name {
+      font-size: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skill-wrapper {
+    display: grid;
+    margin-left: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+      "leftbox"
+      "rightbox"
+      "bottombox";
+
+    .left-wrapper {
+      margin-left: 0;
+    }
+
+    .right-wrapper {
+      padding-top: 24px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .bottom-wrapper {
+      .experince-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .experince-item {
+          flex: 1;
+          padding: 24px 0;
+          .experince-item-wrapper {
+            padding: 12px;
+            height: 100%;
+            background-color: base.$bg-color-2;
+            border-left: 2px solid base.$heading-attention-0;
+          }
+
+          .experince-company-name {
+            font-size: 1rem;
+            margin-bottom: 0;
+          }
+
+          .experince-company-duration {
+            font-size: 0.7rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
