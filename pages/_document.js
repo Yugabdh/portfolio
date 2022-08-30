@@ -35,6 +35,7 @@ export default function Document() {
           name="keywords"
           content="web developer, freelancer, full stack web developer, web developer portfolio, yugabdh, yugabdh pashte, yugabdh portfolio, yugabdh github"
         />
+        <meta name="yandex-verification" content="853897ebe2f08364" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />

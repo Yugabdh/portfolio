@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
                 height={40}
                 width={40}
               />
-              Yugabdh Pashte
+              <span>Yugabdh Pashte</span>
             </a>
           </Link>
           <div className="navbar-toggler" onClick={toggle}>

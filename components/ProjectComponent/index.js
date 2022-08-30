@@ -49,7 +49,7 @@ const ProjectComponent = (props) => {
                 rel="noreferrer"
                 className="primary-button project-link-button"
               >
-                <BsGithub /> Code
+                <BsGithub /> <span>Code</span>
               </a>
             ) : (
               <></>
@@ -61,7 +61,7 @@ const ProjectComponent = (props) => {
                 rel="noreferrer"
                 className="primary-button project-link-button"
               >
-                <MdLink /> Visit
+                <MdLink /> <span>Visit</span>
               </a>
             ) : (
               <></>

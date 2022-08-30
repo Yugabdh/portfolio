@@ -129,3 +129,19 @@
     }
   }
 }
+
+@include base.respond-to(small) {
+  .project-card-wrapper {
+    .project-card {
+      padding: 0;
+      .project-card-info {
+        padding: 0 24px 24px 24px;
+      }
+      .project-card-image {
+        .project-card-image-wrapper {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
