@@ -117,6 +117,7 @@ export default function Home() {
         projectDetails:
           "Ragul Family Dental is one of the freelance opportunities that was given to me by one of my colleagues. The requirements were simple: I needed to create a webapp for a dental clinic that would serve as a booking system. To start with, I generated a low-fidelity UI in Figma to understand the app flow and get the client's go ahead with the design I created. I used Firebase for an easy and trustable login system and data storage to speed up development.",
         skills: ["React.js", "Firebase", "Figma", "Bootstrap", "Sass"],
+        link: "https://ragulfamilydental.com/",
       },
       {
         id: 3,
@@ -159,8 +160,10 @@ export default function Home() {
           "https://res.cloudinary.com/dej6mdgme/image/upload/v1660632621/project-mockups/codelit-mockup_khy1dw.png",
         projectImageName: "Codelit Mock",
         projectDetails:
-          "Codelit was one of my first webapps I created in my first year. I built it using PHP, Javascript, and MySQL. I was just exploring back then. After all, who uses PHP, right? It was a learning website where users could learn C, even though I didn't understand C enough to teach someone in the first place :p. This app had profile management, quizzes, and lessons as modules.",
+          "Codelit was one of my first webapps I created in my first year. I built it using PHP, Javascript, and MySQL. I was just exploring back then. After all, who uses PHP, right? It was a learning website where users could learn C, even though I didn't understand C enough to teach someone in the first place :p. This app had profile management, quizzes, and lessons as modules. Now I'm porting code to Next.js.",
         skills: ["PHP", "Javascript", "MySQL"],
+        link: "https://codelit-web.web.app/",
+        code: "https://github.com/Yugabdh/Codelit",
       },
     ],
     skills: {
