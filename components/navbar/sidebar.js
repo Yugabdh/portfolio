@@ -73,7 +73,7 @@ const SideBar = ({ toggle, isOpen }) => {
         </div>
         <div className="flex justify-center mt-10">
           <a
-            href="https://drive.google.com/file/d/1ehQvbL4hJfOqcI7CsaLr06NmceRFFdeY/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1sRhlNQ613-n3dPa8vQv05dMxCrjg4mon/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2 text-white bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full  font-montserrat font-medium shadow hover:opacity-90"
